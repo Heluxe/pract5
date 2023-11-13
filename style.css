@@ -1,1 +1,57 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.content-link {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.content-link:hover {
+    background-color: magenta;
+}
+
+.content-link:active {
+    background-color: yellow;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+a {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+}
+
+article {
+    font-size: 120%;
+}
+
+h2 {
+    font-size: 144%;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
 
