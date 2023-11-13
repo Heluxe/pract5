@@ -1,57 +1,45 @@
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.content-link {
-    display: inline-block;
-    background-color: blue;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border: 2px solid black;
-    border-radius: 5px;
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.content-link:hover {
-    background-color: magenta;
+.row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.content-link:active {
-    background-color: yellow;
+.box {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 22px;
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+    .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        width: 8.33%;
+    }
 }
 
-a {
-    font-style: italic;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-h3 {
-    text-align: center;
-}
-
-article {
-    font-size: 120%;
-}
-
-h2 {
-    font-size: 144%;
-}
-
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+    .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        width: 16.66%;
+    }
 }
 
 @media (max-width: 768px) {
+    .col-sm-12 {
+        width: 100%;
+    }
 }
-
